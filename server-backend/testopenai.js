@@ -7,7 +7,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 async function testGemini() {
   try {
     const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 
     const prompt = "Summarize the following text: Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows developers to run JavaScript on the server side.";

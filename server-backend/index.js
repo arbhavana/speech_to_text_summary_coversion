@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 const upload = multer({ dest: "uploads/" });
-const ASSEMBLY_API_KEY= "f95d887c6fc643528485537c61aa40ab"
-const GEMINI_API_KEY= "AIzaSyDsOmuSjSiptLLi-2gM0WLlFGY2mZZBUJg"
+const ASSEMBLY_API_KEY= process.env.ASSEMBLY_API_KEY;
+const GEMINI_API_KEY= process.env.GEMINI_API_KEY;
 
 const assemblyClient = new AssemblyAI({ apiKey: ASSEMBLY_API_KEY });
 

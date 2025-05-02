@@ -48,3 +48,4 @@ On the backend side, deploy using Render by connecting GitHub repo and setting t
 environment variables in the Render dashboard.After deploying both parts, the frontend will communicate
 with the backend using the new URL instead of localhost.
 
+![This is the web page](myapp/public/src/asset/image.png)

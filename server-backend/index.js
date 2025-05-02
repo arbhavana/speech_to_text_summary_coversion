@@ -5,7 +5,7 @@ const fs = require("fs");
 const { AssemblyAI } = require("assemblyai");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const pool = require("./database.js"); 
-
+require("dotenv").config();
 const app = express();
 app.use(cors());
 app.use(express.json());
